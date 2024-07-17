@@ -11,6 +11,8 @@
         <property name="prefix" value="WEB-INF/templates/"/>
         <property name="suffix" value=".html"/>
     </bean>
+
+
     <bean id="templateEngine"
           class="org.thymeleaf.spring6.SpringTemplateEngine">
         <property name="templateResolver" ref="templateResolver"/>

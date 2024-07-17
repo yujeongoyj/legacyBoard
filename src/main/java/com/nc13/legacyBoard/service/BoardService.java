@@ -16,4 +16,8 @@ public class BoardService {
     public List<BoardDTO> selectAll() {
         return SESSION.selectList(NAMESPACE + ".selectAll");
     }
+
+    public BoardDTO selectOne(int id) {
+        return SESSION.selectOne(NAMESPACE + ".selectOne", id);
+    }
 }

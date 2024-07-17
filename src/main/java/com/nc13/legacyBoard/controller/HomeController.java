@@ -22,9 +22,5 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("/board/showAll")
-    public String showAll(Model model) {
-        model.addAttribute("list",  boardService.selectAll());
-        return "board/showAll";
-    }
+
 }

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>asset</title>
+</head>
+<body>
+<div th:fragment="header(user)">
+    <div id="row-header">
+        <span th:text="|${user.nickname} 회원님|"></span>
+    </div>
+</div>
+</body>
+</html>

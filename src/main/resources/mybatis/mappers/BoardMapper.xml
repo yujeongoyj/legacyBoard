@@ -8,4 +8,10 @@
         INNER JOIN user
         ON board.writer_id = user.id
     </select>
+    <select id="selectOne" resultType="BoardDTO" parameterType="int">
+        SELECT * FROM board
+        INNER JOIN user
+        ON board.writer_id = user.id
+        WHERE board.id = #{id}
+    </select>
 </mapper>

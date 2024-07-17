@@ -11,7 +11,7 @@
 <body>
 <div class="container-fluid">
     <div class="main h-100">
-        <form action="/user/auth" method="post">
+        <form th:action="@{/user/auth}" th:method="post">
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="username">아이디</label>
@@ -20,9 +20,9 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <label for="password">비밀번호</label>
+                    <label for="password">비밀번호</label>-
                     <input type="password" class="form-control" name="password" id="password">
-                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+                    <input th:type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
                 </div>
             </div>
             <div class="row justify-content-center">
